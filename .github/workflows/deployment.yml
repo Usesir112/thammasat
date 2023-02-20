@@ -26,8 +26,7 @@ jobs:
       - name: npm install and npm Build
         run: |
           npm i
-          npm run build
-          npm run generate
+          npx nuxi generate
 
       - name: copy file to server        
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
@@ -35,7 +34,7 @@ jobs:
             server: ${{ secrets.HOST }}
             username: satedu
             port: 22
-            local_path: './dist/*'
+            local_path: './.output/public/*'
             remote_path: '/home/tsri-hosting/satedu/www'
             sftp_only: true
             password: ${{ secrets.PASSWORD }}
