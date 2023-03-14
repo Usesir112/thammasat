@@ -1,40 +1,40 @@
-# name: Deployment
+name: Deployment
 
-# on:
-#   push:
-#     branches:
-#       - "main"
+on:
+  push:
+    branches:
+      - "main"
 
-# jobs:
-#   deploy:
-#     name: Deployment
-#     runs-on: ubuntu-latest
+jobs:
+  deploy:
+    name: Deployment
+    runs-on: ubuntu-latest
 
-#     strategy:
-#       matrix:
-#         node-version: [18.x]
+    strategy:
+      matrix:
+        node-version: [18.x]
 
-#     steps:
-#       - uses: actions/checkout@v3
+    steps:
+      - uses: actions/checkout@v3
 
-#       - name: Use Node.js ${{ matrix.node-version }}
-#         uses: actions/setup-node@v3
-#         with:
-#           node-version: ${{ matrix.node-version }}
-#           cache: "npm"
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
 
-#       - name: npm install and npm Build
-#         run: |
-#           npm i
-#           npx nuxi generate
+      - name: npm install and npm Build
+        run: |
+          npm i
+          npm run build
 
-#       - name: copy file to server        
-#         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-#         with:
-#             server: ${{ secrets.HOST }}
-#             username: satedu
-#             port: 22
-#             local_path: './.output/public/*'
-#             remote_path: '/home/tsri-hosting/satedu/www'
-#             sftp_only: true
-#             password: ${{ secrets.PASSWORD }}
+      - name: copy file to server        
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+            server: ${{ secrets.HOST }}
+            username: satedu
+            port: 22
+            local_path: './dist/*'
+            remote_path: '/home/tsri-hosting/satedu/www'
+            sftp_only: true
+            password: ${{ secrets.PASSWORD }}
