@@ -1,0 +1,21 @@
+import { createRouter, createWebHistory } from "vue-router";
+
+//Import Views
+import HomeView from "../views/HomeView.vue"
+import * as te from "tw-elements";
+
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: "/",
+      name: "home",
+      component: () => HomeView,
+      meta: {
+        layout: "Default",
+      },
+    },
+  ],
+});
+
+export default router;
