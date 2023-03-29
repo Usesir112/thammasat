@@ -1,9 +1,9 @@
 <template>
-      <nav
-    class="sticky top-0 flex-no-wrap flex w-full items-center justify-between bg-primary-100 py-2 shadow-md shadow-black/5 lg:flex-wrap lg:justify-start"
+  <nav
+    class="sticky top-0 bg-primary-100 p-3 shadow-md"
     data-te-navbar-ref
   >
-    <div class="flex justify-end w-full flex-wrap items-center px-[7rem]">
+    <div class="flex justify-end w-full flex-wrap items-center md:px-10">
       <button
         class="block border-0 bg-transparent py-2 px-2.5 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
         type="button"
@@ -38,7 +38,10 @@
           class="mr-auto flex flex-col lg:pl-10 lg:flex-row"
           data-te-navbar-nav-ref
         >
-          <li class="flex justify-end lg:pr-2 py-2 lg:py-0" data-te-nav-item-ref>
+          <li
+            class="flex justify-end lg:pr-2 py-2 lg:py-0"
+            data-te-nav-item-ref
+          >
             <a
               class="hover:bg-primary duration-300 focus:bg-primary hover:text-white focus:text-white disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
               href="#"
@@ -46,7 +49,10 @@
               >หน้าหลัก</a
             >
           </li>
-          <li class="flex justify-end lg:pr-2 py-2 lg:py-0" data-te-nav-item-ref>
+          <li
+            class="flex justify-end lg:pr-2 py-2 lg:py-0"
+            data-te-nav-item-ref
+          >
             <a
               class="hover:bg-primary duration-300 focus:bg-primary hover:text-white focus:text-white disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
               href="#"
@@ -54,7 +60,10 @@
               >ประวัติความเป็นมา</a
             >
           </li>
-          <li class="flex justify-end lg:pr-2 py-2 lg:py-0" data-te-nav-item-ref>
+          <li
+            class="flex justify-end lg:pr-2 py-2 lg:py-0"
+            data-te-nav-item-ref
+          >
             <a
               class="hover:bg-primary duration-300 focus:bg-primary hover:text-white focus:text-white disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
               href="#"
@@ -63,7 +72,10 @@
             >
           </li>
 
-          <li class="flex justify-end lg:pr-2 py-2 lg:py-0" data-te-nav-item-ref>
+          <li
+            class="flex justify-end lg:pr-2 py-2 lg:py-0"
+            data-te-nav-item-ref
+          >
             <a
               class="hover:bg-primary duration-300 focus:bg-primary hover:text-white focus:text-white disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
               href="#"
@@ -75,7 +87,7 @@
         <!-- Left links -->
 
         <!-- Right elements -->
-        <div class="relative flex items-center  py-2 md:py-0">
+        <div class="relative flex items-center py-2 md:py-0">
           <label for="simple-search" class="sr-only">Search</label>
           <div class="relative w-full">
             <div
@@ -116,4 +128,3 @@
     </div>
   </nav>
 </template>
-

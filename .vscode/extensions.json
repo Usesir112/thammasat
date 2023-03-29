@@ -2,6 +2,10 @@
   "recommendations": [
     "vue.volar",
     "vue.vscode-typescript-vue-plugin",
-    "octref.vetur"
+    "octref.vetur",
+    "bradlc.vscode-tailwindcss",
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag",
+    "esbenp.prettier-vscode"
   ]
 }
