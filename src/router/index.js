@@ -2,15 +2,46 @@ import { createRouter, createWebHistory } from "vue-router";
 
 //Import Views
 import HomeView from "../views/HomeView.vue"
+import ConserveView from "../views/ConserveView.vue"
+import insKruView from "../views/insKruView.vue"
+import knowladgeView from "../views/KnowladgeView.vue"
+import SelfImproveView from "../views/SelfImproveView.vue"
+import TechMakerView from "../views/TechMakerView.vue"
+
 import * as te from "tw-elements";
 
-const routes =  [
+const routes = [
   {
     path: "/",
     name: "home",
     component: HomeView,
   },
-]
+  {
+    path: "/conserve",
+    name: "Conserve",
+    component: ConserveView,
+  },
+  {
+    path: "/insKru",
+    name: "insKru",
+    component: insKruView,
+  },
+  {
+    path: "/knowladge",
+    name: "Knowladge",
+    component: knowladgeView,
+  },
+  {
+    path: "/self-improve",
+    name: "Self-Improve",
+    component: SelfImproveView,
+  },
+  {
+    path: "/tech-maker",
+    name: "Tech-Maker",
+    component: TechMakerView,
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
