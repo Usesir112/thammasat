@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="sticky top-0 bg-primary-100 p-3 shadow-md"
+    class="sticky top-0 bg-primary-100 p-3 shadow-md z-20"
     data-te-navbar-ref
   >
     <div class="flex justify-end w-full flex-wrap items-center md:px-10">
