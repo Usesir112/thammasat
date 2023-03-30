@@ -36,7 +36,7 @@
     <!-- My Map -->
     <div class="min-w-2xl max-w-6xl w-full mx-4 mb-12">
       <img
-        src="@/assets/Picture/tech-maker/section-three/mymap.png"
+        src="/image/tech-maker/section-three/mymap.png"
         alt="myMap"
       />
     </div>
