@@ -18,7 +18,7 @@
             class="grid grid-cols-2 place-items-center mt-12 md:grid-cols-1 md:mx-3"
           >
             <img
-              :src="`src/assets/Picture/tech-maker/section-two/${item.src}`"
+              :src="`/image/tech-maker/section-two/${item.src}`"
               alt="item-one"
               class="w-3/4"
             />
