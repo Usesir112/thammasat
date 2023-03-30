@@ -23,7 +23,7 @@
               class="w-3/4"
             />
             <div class="md:mt-5">
-              <p class="md:h-20">
+              <p class="md:h-52">
                 {{ item.descr }}
               </p>
             </div>

@@ -17,7 +17,7 @@
             :key="index"
             class="grid grid-cols-2 place-items-center mt-12 md:grid-cols-1 md:mx-3"
           >
-            <img :src="`@/assets/Picture/tech-maker/section-four/${item.src}`" alt="item-one" class="w-3/4" />
+            <img :src="`/image/tech-maker/section-four/${item.src}`" alt="item-one" class="w-3/4" />
             <div class="md:mt-5">
               <p class="md:h-20">
                 {{ item.descr }}

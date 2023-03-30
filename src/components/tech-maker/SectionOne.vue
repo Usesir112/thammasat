@@ -31,7 +31,7 @@
       <div class="grid md:grid-cols-3 mt-5 place-items-center">
         <!-- Left -->
         <div class="grid grid-cols-2 place-items-center mt-5 md:grid-cols-1">
-          <img class="w-3/4" src="@/assets/Picture/tech-maker/section-one/left.png" alt="left" />
+          <img class="w-3/4" src="/image/tech-maker/section-one/left.png" alt="left" />
           <div class="ml-3 md:ml-0 md:mt-5">
             <p>กลุ่มเป้าหมาย</p>
             <p>กลุ่มคนทำงาน (25 - 60 ปี)</p>
@@ -42,13 +42,13 @@
 
         <!-- Middle -->
         <div class="w-1/2 order-first md:order-none md:w-full ">
-          <img src="@/assets/Picture/tech-maker/section-one/middle.png" alt="middle" />
+          <img src="/image/tech-maker/section-one/middle.png" alt="middle" />
         </div>
         <!-- Middle -->
 
         <!-- Right -->
         <div class="grid grid-cols-2 place-items-center mt-5 md:grid-cols-1">
-          <img class="w-3/4" src="@/assets/Picture/tech-maker/section-one/right.png" alt="right" />
+          <img class="w-3/4" src="/image/tech-maker/section-one/right.png" alt="right" />
           <div class="ml-3 md:ml-0 md:mt-5">
             <p>พัฒนาศัยกภาพของ</p>
             <p>ครูแกนนำ</p>
