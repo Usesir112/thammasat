@@ -17,7 +17,7 @@
             :key="index"
             class="grid grid-cols-2 place-items-center mt-12 md:grid-cols-1 md:mx-3"
           >
-            <img :src="item.src" alt="item-one" class="w-3/4" />
+            <img :src="`@/assets/Picture/tech-maker/section-four/${item.src}`" alt="item-one" class="w-3/4" />
             <div class="md:mt-5">
               <p class="md:h-20">
                 {{ item.descr }}
@@ -39,51 +39,51 @@ export default {
       items: [
         // First column
         {
-          src: "src/assets/Picture/tech-maker/section-four/network.png",
+          src: "network.png",
           descr: "เครือข่าย",
         },
         {
-          src: "src/assets/Picture/tech-maker/section-four/money.png",
+          src: "money.png",
           descr: "ทุน",
         },
         {
-          src: "src/assets/Picture/tech-maker/section-four/manage.png",
+          src: "manage.png",
           descr: "การบริหารจัดการ",
         },
         {
-          src: "src/assets/Picture/tech-maker/section-four/unity.png",
+          src: "unity.png",
           descr: "ความร่วมมือของชุมชน / นิเวศเชิงพื้นที่",
         },
 
         // Second column
         {
-          src: "src/assets/Picture/tech-maker/section-four/perspective.png",
+          src: "perspective.png",
           descr: "ทัศนคติของคนในสังคม",
         },
         {
-          src: "src/assets/Picture/tech-maker/section-four/adapt.png",
+          src: "adapt.png",
           descr: "ความสามารถในการปรับตัวกับสถานการ์ณ",
         },
         {
-          src: "src/assets/Picture/tech-maker/section-four/change.png",
+          src: "change.png",
           descr: "การเท่าทันการเปลี่ยนแปลง",
         },
         {
-          src: "src/assets/Picture/tech-maker/section-four/view.png",
+          src: "view.png",
           descr: "การขยายมุมมอง",
         },
 
         // Third column
         {
-          src: "src/assets/Picture/tech-maker/section-four/pactical.png",
+          src: "pactical.png",
           descr: "การได้ลงมือทำ",
         },
         {
-          src: "src/assets/Picture/tech-maker/section-four/understanding.png",
+          src: "understanding.png",
           descr: "ความเข้าใจประเด็นพื้นที่",
         },
         {
-          src: "src/assets/Picture/tech-maker/section-four/encouragement.png",
+          src: "encouragement.png",
           descr: "การให้พลังใจในการทำงานระหว่างกัน",
         },
       ],

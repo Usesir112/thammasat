@@ -18,7 +18,7 @@
             class="grid grid-cols-2 place-items-center mt-12 md:grid-cols-1 md:mx-3"
           >
             <img
-              :src="item.src"
+              :src="`@/assets/Picture/tech-maker/section-five/${item.src}`"
               alt="item-one"
               class="w-3/4"
             />
@@ -42,11 +42,11 @@ export default {
       topic: "ปัญหาในการทำงาน",
       items: [
         {
-          src: "src/assets/Picture/tech-maker/section-five/confilx.png",
+          src: "confilx.png",
           descr: "ความขัดแย้งทางความคิดในเครือข่าย",
         },
         {
-          src: "src/assets/Picture/tech-maker/section-five/structure.png",
+          src: "structure.png",
           descr: "โครงสร้างของรัฐ",
         },
         

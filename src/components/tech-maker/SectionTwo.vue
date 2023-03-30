@@ -18,7 +18,7 @@
             class="grid grid-cols-2 place-items-center mt-12 md:grid-cols-1 md:mx-3"
           >
             <img
-              :src="item.src"
+              :src="`src/assets/Picture/tech-maker/section-two/${item.src}`"
               alt="item-one"
               class="w-3/4"
             />
@@ -42,20 +42,20 @@ export default {
       topic: "เป้าหมายของโครงการ",
       items: [
         {
-          src: "src/assets/Picture/tech-maker/section-two/one.png",
+          src: "one.png",
           descr: "สำรวจและจัดระบบข้อมูล เครือข่ายขององค์กรหรือ หน่วยงานต่างๆ",
         },
         {
-          src: "src/assets/Picture/tech-maker/section-two/two.png",
+          src: "two.png",
           descr: "บ่มเพาะคุณลักษณะภาวะผู้นำ และศักยภาพให้แก่เด็กและเยาวชน",
         },
         {
-          src: "src/assets/Picture/tech-maker/section-two/three.png",
+          src: "three.png",
           descr:
             "สร้างความตระหนักและการสร้างแรงบัลดาลใจให้กับครูหรือผู้ที่ทำงานด้านการศึกษาทั่วประเทศ",
         },
         {
-          src: "src/assets/Picture/tech-maker/section-two/four.png",
+          src: "four.png",
           descr:
             "สื่อสารเพื่อเสนอบทสนทนาและจิตสำนึกใหม่ทางสังคม (Pubblic Pedagogy)",
         },
