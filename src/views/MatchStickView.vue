@@ -1,21 +1,3 @@
-<template>
-  <Layout>
-    <!-- @/components/match-stick/SectionOne.vue -->
-    <SectionOne />
-
-    <!-- @/components/match-stick/SectionTwo.vue -->
-    <SectionTwo />
-
-    <!-- @/components/match-stick/SectionFour.vue -->
-    <SectionFour />
-
-    <!-- @/components/match-stick/SectionFive.vue -->
-    <SectionFive />
-
-    <!-- @/components/match-stick/SectionSix.vue -->
-    <SectionSix />
-  </Layout>
-</template>
 <script>
 import { defineComponent } from "vue";
 
@@ -37,3 +19,12 @@ export default defineComponent({
   },
 });
 </script>
+<template>
+  <Layout>
+    <SectionOne />
+    <SectionTwo />
+    <SectionFour />
+    <SectionFive />
+    <SectionSix />
+  </Layout>
+</template>

@@ -1,16 +1,16 @@
 <script>
 import Thailand from "@/components/Map/Thailand.vue";
-import Person from "../svg/Person.vue";
+import Person from "./svg/Person.vue";
 export default {
   components: { Thailand, Person },
 };
 </script>
 <template>
-  <section class="mx-10 md:mx-40 space-y-12">
-    <h1 class="text-2xl font-bold text-primary-700">กลุ่มเป้าหมายของโครงการ</h1>
+  <section class="mx-10 md:mx-40 space-y-12 mt-12">
+    <h1 class="text-2xl font-bold text-primary-900">กลุ่มเป้าหมายของโครงการ</h1>
 
     <div
-      class="grid md:grid-cols-2 place-items-center gap-10 text-lg font-bold text-primary-700"
+      class="grid md:grid-cols-2 place-items-center gap-10 text-lg font-bold text-primary-900"
     >
       <div>
         <p>กลุ่มนักศึกษามหาลัย(18 - 25ปี)</p>

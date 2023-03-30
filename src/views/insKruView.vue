@@ -2,20 +2,32 @@
 import { defineComponent } from "vue";
 
 import Layout from "@/layouts/Layout.vue";
-import SectionIII from "@/components/insKru/iii/Section.vue";
-import SectionIV from "@/components/insKru/iv/Section.vue";
+import SectionOne from "@/components/insKru/SectionOne.vue";
+import SectionTwo from "@/components/insKru/SectionTwo.vue";
+import SectionThree from "@/components/insKru/SectionThree.vue";
+import SectionFour from "@/components/insKru/SectionFour/Section.vue";
+import SectionFiveVue from "@/components/insKru/SectionFive.vue"
+import SectionSix from "../components/insKru/SectionSix.vue";
 
 export default defineComponent({
   components: {
     Layout,
-    SectionIII,
-    SectionIV,
+    SectionOne,
+    SectionTwo,
+    SectionThree,
+    SectionFour,
+    SectionFiveVue,
+    SectionSix
   },
 });
 </script>
 <template>
   <Layout>
-    <SectionIII />
-    <SectionIV />
+    <SectionOne />
+    <SectionTwo />
+    <SectionThree />
+    <SectionFour />
+    <SectionFiveVue />
+    <SectionSix />
   </Layout>
 </template>

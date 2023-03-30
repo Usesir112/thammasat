@@ -20,7 +20,7 @@ export default {
 </script>
 <template>
   <section class="px-10 md:px-40 pt-8 space-y-12 bg-primary-100">
-    <h1 class="text-2xl font-bold text-primary-700">กิจกรรมของโครงการ</h1>
+    <h1 class="text-4xl font-bold text-primary-900">กิจกรรมของโครงการ</h1>
 
     <div
       class="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:gap-0 place-items-center pb-16"
