@@ -4,7 +4,7 @@
       <div class="mx-10 md:mx-40">
         <!-- Topic -->
         <div class="text-primary-900">
-          <p class="text-4xl font-bold py-5">{{ topic }}</p>
+          <p class="text-4xl font-bold py-5 text-center">{{ topic }}</p>
         </div>
         <!-- Topic -->
 
@@ -15,18 +15,13 @@
           <div
             v-for="(item, index) in items"
             :key="index"
-            class="grid grid-cols-2 place-items-center mt-12 md:grid-cols-1 md:mx-3"
+            class="place-items-center mt-12 grid-cols-1 md:mx-3"
           >
             <img
-              :src="`/image/match-stick/section-two/${item.src}`"
+              :src="`/image/conserve/section-two/${item.src}`"
               alt="item-one"
               class="h-3/4"
             />
-            <div class="md:mt-5">
-              <p class="md:h-24 text-2xl">
-                {{ item.descr }}
-              </p>
-            </div>
           </div>
         </div>
 
@@ -39,19 +34,16 @@
 export default {
   data() {
     return {
-      topic: "เป้าหมายของโครงการ",
+      topic: "เป้าหมายพัฒนาการเรียนรู้",
       items: [
         {
           src: "one.png",
-          descr: "การสร้างกลุ่มคนรุ่นต่อไป",
         },
         {
           src: "two.png",
-          descr: "ความรู้ภูมิปัญญาท้องถิ่น",
         },
         {
           src: "three.png",
-          descr: "ทัศนคติต่อการเคารพความแตกต่างหลากหลาย",
         },
       ],
     };

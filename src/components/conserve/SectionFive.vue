@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="bg-primary-100 mt-12 py-4">
+    <div class="mt-12 py-4 bg-primary-100">
       <div class="mx-10 md:mx-40">
         <!-- Topic -->
         <div class="text-primary-900">
@@ -17,13 +17,9 @@
             :key="index"
             class="grid grid-cols-2 place-items-center mt-12 md:grid-cols-1 md:mx-3"
           >
-            <img
-              :src="`/image/match-stick/section-two/${item.src}`"
-              alt="item-one"
-              class="h-3/4"
-            />
+            <img :src="`/image/conserve/section-five/${item.src}`" alt="item-one" class="w-3/4" />
             <div class="md:mt-5">
-              <p class="md:h-24 text-2xl">
+              <p class="md:h-20 text-2xl">
                 {{ item.descr }}
               </p>
             </div>
@@ -39,19 +35,19 @@
 export default {
   data() {
     return {
-      topic: "เป้าหมายของโครงการ",
+      topic: "ปัจจัยแห่งความสำเร็จ",
       items: [
         {
-          src: "one.png",
-          descr: "การสร้างกลุ่มคนรุ่นต่อไป",
+          src: "conection.png",
+          descr: "เครือข่าย",
         },
         {
-          src: "two.png",
-          descr: "ความรู้ภูมิปัญญาท้องถิ่น",
+          src: "funding.png",
+          descr: "ทุน",
         },
         {
-          src: "three.png",
-          descr: "ทัศนคติต่อการเคารพความแตกต่างหลากหลาย",
+          src: "child.png",
+          descr: "การสร้างทายาท",
         },
       ],
     };

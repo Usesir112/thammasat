@@ -1,17 +1,29 @@
-<template>
-    <Layout>
-        โครงการครูรัก(ษ์)ถิ่น
-    </Layout>
-    <!-- TODO โครงการครูรัก(ษ์)ถิ่น -->
-</template>
+
 <script>
 import { defineComponent } from "vue";
 
 import Layout from "@/layouts/Layout.vue";
 
+import SectionOne from "@/components/conserve/SectionOne.vue";
+import SectionTwo from "@/components/conserve/SectionTwo.vue";
+import SectionFive from "@/components/conserve/SectionFive.vue"
+import SectionSix from "@/components/conserve/SectionSix.vue"
+
 export default defineComponent({
     components: {
-        Layout
+        Layout,
+        SectionOne,
+        SectionTwo,
+        SectionFive,
+        SectionSix
     }
 })
 </script>
+<template>
+    <Layout>
+        <SectionOne />
+        <SectionTwo />
+        <SectionFive />
+        <SectionSix />
+    </Layout>
+</template>
