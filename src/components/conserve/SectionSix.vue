@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="bg-primary-100 mt-12 py-4">
+    <div class="mt-12 py-4">
       <div class="mx-10 md:mx-40">
         <!-- Topic -->
         <div class="text-primary-900">
@@ -10,7 +10,7 @@
 
         <!-- Items -->
         <div
-          class="grid justify-between text-primary-900 font-bold text-center md:grid-cols-3"
+          class="grid justify-between text-primary-900 font-bold text-center md:grid-cols-4"
         >
           <div
             v-for="(item, index) in items"
@@ -18,12 +18,12 @@
             class="grid grid-cols-2 place-items-center mt-12 md:grid-cols-1 md:mx-3"
           >
             <img
-              :src="`/image/match-stick/section-two/${item.src}`"
+              :src="`/image/conserve/section-six/${item.src}`"
               alt="item-one"
-              class="h-3/4"
+              class="w-3/4"
             />
             <div class="md:mt-5">
-              <p class="md:h-24 text-2xl">
+              <p class="md:h-20">
                 {{ item.descr }}
               </p>
             </div>
@@ -39,19 +39,15 @@
 export default {
   data() {
     return {
-      topic: "เป้าหมายของโครงการ",
+      topic: "ปัญหาในการทำงาน",
       items: [
         {
-          src: "one.png",
-          descr: "การสร้างกลุ่มคนรุ่นต่อไป",
+          src: "structure.png",
+          descr: "โครงสร้างของรัฐ",
         },
         {
-          src: "two.png",
-          descr: "ความรู้ภูมิปัญญาท้องถิ่น",
-        },
-        {
-          src: "three.png",
-          descr: "ทัศนคติต่อการเคารพความแตกต่างหลากหลาย",
+          src: "teamwork.png",
+          descr: "ความร่วมมือของหน่วยงานภาครัฐหลายฝ่าย",
         },
       ],
     };
