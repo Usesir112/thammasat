@@ -7,6 +7,7 @@ import insKruView from "../views/insKruView.vue"
 import knowladgeView from "../views/KnowladgeView.vue"
 import SelfImproveView from "../views/SelfImproveView.vue"
 import TechMakerView from "../views/TechMakerView.vue"
+import MatchStickView from "../views/MatchStickView.vue"
 
 import * as te from "tw-elements";
 
@@ -40,6 +41,11 @@ const routes = [
     path: "/tech-maker",
     name: "Tech-Maker",
     component: TechMakerView,
+  },
+  {
+    path: "/match-stick",
+    name: " Match-Stick",
+    component: MatchStickView,
   },
 ];
 
