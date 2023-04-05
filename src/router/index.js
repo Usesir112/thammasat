@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 //Import Views
-import HomeView from "../views/HomeView.vue"
-import ConserveView from "../views/ConserveView.vue"
-import insKruView from "../views/insKruView.vue"
-import knowladgeView from "../views/KnowladgeView.vue"
-import SelfImproveView from "../views/SelfImproveView.vue"
-import TechMakerView from "../views/TechMakerView.vue"
-import MatchStickView from "../views/MatchStickView.vue"
+import HomeView from "../views/HomeView.vue";
+import ConserveView from "../views/ConserveView.vue";
+import insKruView from "../views/insKruView.vue";
+import knowladgeView from "../views/KnowladgeView.vue";
+import SelfImproveView from "../views/SelfImproveView.vue";
+import TechMakerView from "../views/TechMakerView.vue";
+import MatchStickView from "../views/MatchStickView.vue";
 
 import * as te from "tw-elements";
 
@@ -50,8 +50,8 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes
+  history: createWebHistory(),
+  routes,
 });
 
 export default router;
