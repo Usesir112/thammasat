@@ -38,3 +38,14 @@ jobs:
             remote_path: '/home/tsri-hosting/satedu/www'
             sftp_only: true
             password: ${{ secrets.PASSWORD }}
+
+      - name: copy access to server      
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+            server: ${{ secrets.HOST }}
+            username: satedu
+            port: 22
+            local_path: './.htaccess'
+            remote_path: '/home/tsri-hosting/satedu/www'
+            sftp_only: true
+            password: ${{ secrets.PASSWORD }}
