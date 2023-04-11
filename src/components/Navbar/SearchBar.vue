@@ -1,5 +1,5 @@
 <template>
-  <form action="relative">
+  <form action="">
     <div class="flex items-center md:py-0">
       <label for="simple-search" class="sr-only">Search</label>
       <div class="relative w-full">
@@ -26,6 +26,9 @@
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-l-full focus:ring-slate-500 focus:border-slate-500 block w-full pl-10 p-2.5"
           placeholder="Search"
           v-model="search"
+          @focusin="showSearch = true"
+          @focusout="showSearch = false"
+          
         />
       </div>
       <button
@@ -36,55 +39,59 @@
       </button>
     </div>
 
-      <div class="bg-gray-50 mx-4 overflow-y-auto md:absolute" :class="!!searchResults.length ? 'h-64 ': 'w-full'" v-if="searchResults">
-        <ol class="space-y-4 text-gray-500 list-decimal list-inside p-4 w-full">
-            <template v-for="result in searchResults">
-          <li>
-            {{result.category}}
-            <ul class="pl-5 mt-2 space-y-1 list-disc list-inside">
-              <template v-for="project in result.projects">
-                <li>{{project}}</li>
-              </template>
-            </ul>
-          </li>
-        </template>
-        </ol>
-       
-      </div>
-    
+    <div class="bg-gray-50 mx-4 overflow-y-auto md:absolute md:left-0 w-full" v-if="showSearch">
+      <ol class="space-y-4 text-gray-500 list-decimal list-inside p-4 w-full">
+        <li v-for="tagData in searchTag" >
+          {{tagData.name}}
+          <ul class="pl-5 mt-2 flex">
+            <template v-for="tag in tagData.tags">
+              <span class="tag" :class="searchArrayTag.has(tag) ?'bg-purple-400 text-white' : 'bg-purple-100 text-purple-800'" @click="addTag(tag)">{{tag}}</span>
+            </template>
+   
+          </ul>
+        </li>
+      </ol>
+      <hr class="h-px my-8 bg-gray-200 border-0">
+      {{ searchArrayTag }}
+      <ol class="space-y-4 text-gray-500 list-decimal list-inside p-4 w-full">
+        <li>
+          <router-link :to="{}">test1</router-link>
+        </li>
+      </ol>
+    </div>
   </form>
 </template>
 <script>
-import { tagByCategory } from "./tagSearch";
+import { tag } from "./tag";
 export default {
   data() {
     return {
+      showSearch: false,
       search: null,
       searchResults: null,
+      searchArrayTag: new Set(),
+      searchTag: tag
     };
   },
   watch: {
     search(searchKeyword) {
-      if(searchKeyword){
-        this.searchResults = tagByCategory.reduce((acc, category) => {
-        const matchingProjects = category.projects.filter((project) =>
-          project.toLowerCase().includes(searchKeyword.toLowerCase())
-        );
-        if (matchingProjects.length > 0) {
-          acc.push({
-            category: category.name,
-            projects: matchingProjects,
-          });
-        }
-        return acc;
-      }, []);
-      }else{
-        this.searchResults = null;
-
-      }
-     
-      
+      console.log(searchKeyword);
     },
   },
+  methods:{
+    addTag(tag){
+      if(this.searchArrayTag.has(tag)){
+        this.searchArrayTag.delete(tag)
+      }else{
+        this.searchArrayTag.add(tag)
+      }
+    }
+  }
 };
 </script>
+
+<style lang="postcss" scoped>
+.tag {
+  @apply text-sm  mr-2 px-2.5 py-0.5 rounded cursor-pointer
+}
+</style>

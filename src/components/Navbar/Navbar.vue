@@ -73,7 +73,7 @@ export default {
       >
         <!-- Left links -->
         <ul
-          class="mr-auto flex flex-col lg:pl-10 lg:flex-row"
+          class="flex flex-col lg:pl-10 lg:flex-row"
           data-te-navbar-nav-ref
         >
           <li
