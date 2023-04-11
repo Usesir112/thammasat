@@ -21,6 +21,7 @@ export default defineComponent({
     SectionSix
   },
 });
+</script>
 <template>
     <Layout>
         <SectionOne />
