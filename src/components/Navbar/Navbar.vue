@@ -89,7 +89,7 @@ export default {
               data-te-nav-link-ref
               >{{ item.title }}</a
             >
-            <div
+            <!-- <div
               data-popover
               :id="item.name"
               role="tooltip"
@@ -112,7 +112,7 @@ export default {
                 </div>
               </div>
               <div data-popper-arrow></div>
-            </div>
+            </div> -->
           </li>
         </ul>
         <!-- Left links -->
