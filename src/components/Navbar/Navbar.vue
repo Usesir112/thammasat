@@ -1,9 +1,41 @@
 <script>
 import SearchBar from "./SearchBar.vue";
 export default {
-  components:{SearchBar}
-}
+  components: { SearchBar },
+  data() {
+    return {
+      items: [
+        { name: "home", title: "หน้าหลัก", path: "" },
+        { name: "history", title: "ประวัติความเป็นมา", path: "" },
+        { name: "type", title: "ประเภทของโครงการ", path: "" },
+        { name: "about", title: "เกี่ยวกับเรา", path: "" },
+      ],
+      subItems: [
+        {
+          name: "home",
+          items: [
+            { name: "overall", title: "ภาพรวมโครงการ", path: "" },
+            { name: "province", title: "ภาพรวมโครงการรายจังหวัด", path: "" },
+            { name: "target", title: "ภาพรวมกลุ่มเป้าหมาย", path: "" },
+            { name: "success", title: "ภาพรวมปัจจัยแห่งความสำเร็จ", path: "" },
+          ],
+        },
+        {
+          name: "type",
+          items: [
+            { name: "longterm", title: "โครงการต่อเนื่องระยะยาว" },
+            { name: "area", title: "หน่วยงานขับเคลื่อนระดับพื้นที่" },
+            { name: "organization", title: "Organization & Learning Space" },
+            { name: "edupreneurs", title: "Edupreneurs" },
+            { name: "learning", title: "Learning Technology & Media" },
+          ],
+        },
+      ],
+    };
+  },
+};
 </script>
+
 <template>
   <nav
     class="sticky top-0 bg-primary-100 p-3 shadow-md z-20"
@@ -47,54 +79,47 @@ export default {
           <li
             class="flex justify-end lg:pr-2 py-2 lg:py-0"
             data-te-nav-item-ref
+            v-for="item in items"
+            :key="item.name"
           >
             <a
               class="hover:bg-primary duration-300 focus:bg-primary hover:text-white focus:text-white disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
-              href="#"
+              :data-popover-target="item.name"
+              data-popover-trigger="click"
               data-te-nav-link-ref
-              >หน้าหลัก</a
+              >{{ item.title }}</a
             >
-          </li>
-          <li
-            class="flex justify-end lg:pr-2 py-2 lg:py-0"
-            data-te-nav-item-ref
-          >
-            <a
-              class="hover:bg-primary duration-300 focus:bg-primary hover:text-white focus:text-white disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
-              href="#"
-              data-te-nav-link-ref
-              >ประวัติความเป็นมา</a
+            <div
+              data-popover
+              :id="item.name"
+              role="tooltip"
+              class="z-10 invisible inline-block w-64 text-sm text-gray-500 bg-white transition-opacity duration-300 shadow-sm opacity-0"
             >
-          </li>
-          <li
-            class="flex justify-end lg:pr-2 py-2 lg:py-0"
-            data-te-nav-item-ref
-          >
-            <a
-              class="hover:bg-primary duration-300 focus:bg-primary hover:text-white focus:text-white disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
-              href="#"
-              data-te-nav-link-ref
-              >ประเภทของโครงการ</a
-            >
-          </li>
-
-          <li
-            class="flex justify-end lg:pr-2 py-2 lg:py-0"
-            data-te-nav-item-ref
-          >
-            <a
-              class="hover:bg-primary duration-300 focus:bg-primary hover:text-white focus:text-white disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
-              href="#"
-              data-te-nav-link-ref
-              >เกี่ยวกับเรา</a
-            >
+              <div
+                class=""
+                v-for="subItem in subItems"
+                :key="subItem.name"
+                v-show="item.name == subItem.name"
+              >
+                <div
+                  v-for="sublist in subItem.items"
+                  :key="sublist.name"
+                  class="px-2 py-1 mt-1 bg-primary-100 hover:bg-primary hover:text-white hover:cursor-pointer"
+                >
+                  <p>
+                    {{ sublist.title }}
+                  </p>
+                </div>
+              </div>
+              <div data-popper-arrow></div>
+            </div>
           </li>
         </ul>
         <!-- Left links -->
 
         <!-- Right elements -->
         <div class="">
-          <SearchBar/>
+          <SearchBar />
         </div>
         <!-- Right elements -->
       </div>

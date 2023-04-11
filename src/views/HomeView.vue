@@ -1,33 +1,15 @@
 <template>
-  <layout>
-    <!-- @/components/tech-maker/SectionOne.vue -->
+  <Layout>
     <SectionOne />
-
-    <!-- @/components/tech-maker/SectionTwo.vue -->
-    <SectionTwo />
-
-    <!-- @/components/tech-maker/SectionThree/SectionThree.vue -->
-    <SectionThree />
-
-    <!-- @/components/tech-maker/SectionFour.vue -->
-    <SectionFour />
-
-    <!-- @/components/tech-maker/SectionFive.vue -->
-    <SectionFive />
-
-  </layout>
+    <img class="w-full" src="../components/Home/Sectiontwo.png" alt="sectiontwo" />
+    <img class="w-full" src="../components/Home/Sectionthree.png" alt="sectionthree" />
+    <img class="w-full" src="../components/Home/Sectionfour.png" alt="Sectionfour" />
+  </Layout>
 </template>
 <script>
-import { defineComponent } from "vue";
-
 import Layout from "@/layouts/Layout.vue";
-import SectionOne from "@/components/tech-maker/SectionOne.vue";
-import SectionTwo from "@/components/tech-maker/SectionTwo.vue";
-import SectionThree from "@/components/tech-maker/SectionThree/SectionThree.vue";
-import SectionFour from "@/components/tech-maker/SectionFour.vue";
-import SectionFive from "@/components/tech-maker/SectionFive.vue";
-
-export default defineComponent({
-  components: { Layout, SectionOne, SectionTwo, SectionThree, SectionFour, SectionFive },
-});
+import SectionOne from "@/components/Home/SectionOne.vue"
+export default {
+  components: { Layout, SectionOne },
+};
 </script>
