@@ -27,8 +27,6 @@
           placeholder="Search"
           v-model="search"
           @focusin="showSearch = true"
-          @focusout="showSearch = false"
-          
         />
       </div>
       <button
@@ -40,6 +38,7 @@
     </div>
 
     <div class="bg-gray-50 mx-4 overflow-y-auto md:absolute md:left-0 w-full" v-if="showSearch">
+      <p class="cursor-pointer" @click="showSearch = false">ปิด</p>
       <ol class="space-y-4 text-gray-500 list-decimal list-inside p-4 w-full">
         <li v-for="tagData in searchTag" >
           {{tagData.name}}
