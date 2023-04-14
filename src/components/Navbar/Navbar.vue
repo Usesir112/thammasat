@@ -1,41 +1,3 @@
-<script>
-import SearchBar from "./SearchBar.vue";
-export default {
-  components: { SearchBar },
-  data() {
-    return {
-      items: [
-        { name: "home", title: "หน้าหลัก", path: "" },
-        { name: "history", title: "ประวัติความเป็นมา", path: "" },
-        { name: "type", title: "ประเภทของโครงการ", path: "" },
-        { name: "about", title: "เกี่ยวกับเรา", path: "" },
-      ],
-      subItems: [
-        {
-          name: "home",
-          items: [
-            { name: "overall", title: "ภาพรวมโครงการ", path: "" },
-            { name: "province", title: "ภาพรวมโครงการรายจังหวัด", path: "" },
-            { name: "target", title: "ภาพรวมกลุ่มเป้าหมาย", path: "" },
-            { name: "success", title: "ภาพรวมปัจจัยแห่งความสำเร็จ", path: "" },
-          ],
-        },
-        {
-          name: "type",
-          items: [
-            { name: "longterm", title: "โครงการต่อเนื่องระยะยาว" },
-            { name: "area", title: "หน่วยงานขับเคลื่อนระดับพื้นที่" },
-            { name: "organization", title: "Organization & Learning Space" },
-            { name: "edupreneurs", title: "Edupreneurs" },
-            { name: "learning", title: "Learning Technology & Media" },
-          ],
-        },
-      ],
-    };
-  },
-};
-</script>
-
 <template>
   <nav
     class="sticky top-0 bg-primary-100 p-3 shadow-md z-20"
@@ -83,7 +45,8 @@ export default {
             :key="item.name"
           >
             <a
-              class="hover:bg-primary duration-300 focus:bg-primary hover:text-white focus:text-white disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
+              class="cursor-pointer hover:bg-primary duration-300 focus:bg-primary hover:text-white focus:text-white disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
+              @click="fillterEvent"
               :data-popover-target="item.name"
               data-popover-trigger="click"
               data-te-nav-link-ref
@@ -127,3 +90,45 @@ export default {
     </div>
   </nav>
 </template>
+
+<script>
+import SearchBar from "./SearchBar.vue";
+export default {
+  components: { SearchBar },
+  data() {
+    return {
+      items: [
+        { name: "home", title: "หน้าหลัก", path: "" },
+        { name: "history", title: "ประวัติความเป็นมา", path: "" },
+        { name: "type", title: "ประเภทของโครงการ", path: "" },
+        { name: "about", title: "เกี่ยวกับเรา", path: "" },
+        { name: "fillter", title: "ตัวกรอกข้อมูล"}
+      ],
+      subItems: [
+        {
+          name: "home",
+          items: [
+            { name: "overall", title: "ภาพรวมโครงการ", path: "" },
+            { name: "province", title: "ภาพรวมโครงการรายจังหวัด", path: "" },
+            { name: "target", title: "ภาพรวมกลุ่มเป้าหมาย", path: "" },
+            { name: "success", title: "ภาพรวมปัจจัยแห่งความสำเร็จ", path: "" },
+          ],
+        },
+        {
+          name: "type",
+          items: [
+            { name: "longterm", title: "โครงการต่อเนื่องระยะยาว" },
+            { name: "area", title: "หน่วยงานขับเคลื่อนระดับพื้นที่" },
+            { name: "organization", title: "Organization & Learning Space" },
+            { name: "edupreneurs", title: "Edupreneurs" },
+            { name: "learning", title: "Learning Technology & Media" },
+          ],
+        },
+      ],
+    };
+  },
+  methods: {
+    
+  }
+};
+</script>
