@@ -44,13 +44,13 @@
             v-for="item in items"
             :key="item.name"
           >
-            <a
-              class="cursor-pointer hover:bg-primary duration-300 focus:bg-primary hover:text-white focus:text-white disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
-              @click="fillterEvent"
+            <router-link
+              class="cursor-pointer hover:bg-primary duration-300 focus:bg-primary hover:text-white focus:text-white lg:px-2"
               :data-popover-target="item.name"
               data-popover-trigger="click"
               data-te-nav-link-ref
-              >{{ item.title }}</a
+              :to="{ name: item.path }"
+              >{{ item.title }}</router-link
             >
             <!-- <div
               data-popover
@@ -98,11 +98,10 @@ export default {
   data() {
     return {
       items: [
-        { name: "home", title: "หน้าหลัก", path: "" },
+        { name: "home", title: "หน้าหลัก", path: "Home" },
         { name: "history", title: "ประวัติความเป็นมา", path: "" },
         { name: "type", title: "ประเภทของโครงการ", path: "" },
         { name: "about", title: "เกี่ยวกับเรา", path: "" },
-        { name: "fillter", title: "ตัวกรอกข้อมูล"}
       ],
       subItems: [
         {
@@ -128,7 +127,7 @@ export default {
     };
   },
   methods: {
-    
+
   }
 };
 </script>
