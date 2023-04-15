@@ -32,7 +32,16 @@
 
       <!-- Thai map -->
       <div class="mt-10">
-        <Thailand />
+        <Thailand
+          :population="{
+            North:  this.stat[0].amount,
+            NorthEast:  this.stat[1].amount,
+            Center:  this.stat[3].amount,
+            East:  this.stat[0].amount,
+            West:  this.stat[1].amount,
+            South:  this.stat[2].amount,
+          }"
+        />
       </div>
       <!-- Thai map -->
     </div>
@@ -48,12 +57,18 @@ export default {
       description:
         "คือโครงการที่จัดทำขึ้นเพื่อหาแนวทางการขับเคลื่อนเครือข่ายด้านการศึกษาและการเรียนรู้ด้วยองค์ความรู้ในหลากหลายมิติ รวมถึงการวิเคราะห์ปัจจัยแห่งความสำเร็จและปัจจัยแห่งความล้มเหลว",
       stat: [
-        { name: "province", title: "จังหวัด", amount: "00" },
-        { name: "district", title: "อำเภอ", amount: "00" },
-        { name: "project", title: "โครงการ", amount: "00" },
-        { name: "member", title: "ผู้เข้าร่วม(คน)", amount: "00" },
+        { name: "province", title: "จังหวัด", amount: null },
+        { name: "district", title: "อำเภอ", amount: null },
+        { name: "project", title: "โครงการ", amount: null },
+        { name: "member", title: "ผู้เข้าร่วม(คน)", amount: null },
       ],
     };
+  },
+  created() {
+    this.stat[0].amount = Math.floor(Math.random() * 100) + 1;
+    this.stat[1].amount = Math.floor(Math.random() * 100) + 1;
+    this.stat[2].amount = Math.floor(Math.random() * 100) + 1;
+    this.stat[3].amount = Math.floor(Math.random() * 100) + 1;
   },
 };
 </script>
