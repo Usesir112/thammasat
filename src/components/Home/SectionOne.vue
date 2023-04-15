@@ -34,12 +34,12 @@
       <div class="mt-10">
         <Thailand
           :population="{
-            North:  this.stat[0].amount,
-            NorthEast:  this.stat[1].amount,
-            Center:  this.stat[3].amount,
-            East:  this.stat[0].amount,
-            West:  this.stat[1].amount,
-            South:  this.stat[2].amount,
+            North: this.stat[0].amount,
+            NorthEast: this.stat[1].amount,
+            Center: this.stat[3].amount,
+            East: this.stat[0].amount,
+            West: this.stat[1].amount,
+            South: this.stat[2].amount,
           }"
         />
       </div>
@@ -49,6 +49,8 @@
 </template>
 <script>
 import Thailand from "@/components/Map/Thailand.vue";
+import eventBus from "@/event-bus";
+
 export default {
   components: { Thailand },
   data() {
@@ -64,11 +66,22 @@ export default {
       ],
     };
   },
+  mounted() {
+    eventBus.on("request-random-number", this.randomNumber);
+  },
+  beforeUnmount() {
+    eventBus.off("request-random-number", this.randomNumber);
+  },
+  methods: {
+    randomNumber() {
+      this.stat[0].amount = Math.floor(Math.random() * 100) + 1;
+      this.stat[1].amount = Math.floor(Math.random() * 100) + 1;
+      this.stat[2].amount = Math.floor(Math.random() * 100) + 1;
+      this.stat[3].amount = Math.floor(Math.random() * 100) + 1;
+    },
+  },
   created() {
-    this.stat[0].amount = Math.floor(Math.random() * 100) + 1;
-    this.stat[1].amount = Math.floor(Math.random() * 100) + 1;
-    this.stat[2].amount = Math.floor(Math.random() * 100) + 1;
-    this.stat[3].amount = Math.floor(Math.random() * 100) + 1;
+    this.randomNumber();
   },
 };
 </script>

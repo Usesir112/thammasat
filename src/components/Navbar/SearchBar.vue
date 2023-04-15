@@ -42,7 +42,11 @@
             <template
               v-if="searchResults.length > 0 && Array.isArray(searchResults)"
             >
-              <li v-for="project in searchResults" :key="project.name" class="p-1 hover:text-white hover:bg-primary">
+              <li
+                v-for="project in searchResults"
+                :key="project.name"
+                class="p-1 hover:text-white hover:bg-primary"
+              >
                 <router-link :to="{ name: project.link }">{{
                   project.name
                 }}</router-link>
@@ -59,6 +63,8 @@
 <script>
 import { tag } from "./tag";
 import { dataWithTag } from "./data";
+import eventBus from '@/event-bus';
+
 export default {
   data() {
     return {
@@ -81,6 +87,8 @@ export default {
   },
   methods: {
     addTag(tag) {
+      eventBus.emit('request-random-number');
+
       if (this.searchArrayTag.has(tag)) {
         this.searchArrayTag.delete(tag);
       } else {
