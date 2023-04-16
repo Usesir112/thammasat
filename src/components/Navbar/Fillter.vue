@@ -2,13 +2,13 @@
   <form action="">
     <div
       class="cursor-pointer hover:bg-primary duration-300 focus:bg-primary hover:text-white focus:text-white lg:px-2"
-      @click="showSearch = !showSearch"
+      @click="showFillter = !showFillter"
     >
       ตัวกรองข้อมูล
     </div>
     <div
-      class="flex bg-gray-50 mx-4 mt-5 h-96 md:absolute shadow-lg"
-      v-if="showSearch"
+      class="z-10 flex bg-gray-50 mx-2 mt-1 rounded-lg md:mt-5 h-96 left-0 md:left-auto absolute shadow-lg"
+      v-if="showFillter"
     >
       <!-- Tag List -->
       <div class="w-1/2 overflow-y-auto h-96">
@@ -68,7 +68,7 @@ import eventBus from '@/event-bus';
 export default {
   data() {
     return {
-      showSearch: false,
+      showFillter: false,
       search: null,
       searchArrayTag: new Set(), // Add all tags by default
       searchTag: tag,
