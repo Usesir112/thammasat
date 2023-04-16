@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400&display=swap");
 
 /* TailwindCSS */
 @tailwind base;
@@ -6,9 +6,28 @@
 @tailwind utilities;
 /* TailwindCSS */
 
-
 @layer base {
   html {
-    font-family: 'Prompt', sans-serif;
+    font-family: "Prompt", sans-serif;
   }
+}
+
+@layer components {
+  .input {
+    @apply /* text-md, border-1, border-[COLOR-NAME or COLOR CODE], focus:border-[COLOR-NAME or COLOR CODE] */
+    
+    block 
+    p-2
+    w-full 
+    bg-white
+    rounded-lg 
+    appearance-none 
+
+    duration-300 
+
+    focus:outline-none 
+    focus:ring-0
+    focus:shadow-md;
+  }
+
 }
