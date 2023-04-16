@@ -1,6 +1,8 @@
 <template>
     <Layout>
-        บ้านอุทัยยิ้ม
+      <div class="absolute -top-[35%]">
+        <img src="../../../public/image/02AreaLevelDriving/12UthaiYim/UthaiYim.jpg"  alt="draft">
+      </div>
     </Layout>
 </template>
 <script>
@@ -10,3 +12,4 @@ export default {
   components: { Layout },
 };
 </script>
+

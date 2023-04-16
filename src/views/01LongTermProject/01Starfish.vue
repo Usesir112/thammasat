@@ -1,6 +1,8 @@
 <template>
     <Layout>
-        โรงเรียนบ้านปลาดาว
+      <div class="absolute -top-[35%]">
+        <img src="../../../public/image/01LongTermProject/01Starfish/Starfish.jpg"  alt="draft">
+      </div>
     </Layout>
 </template>
 <script>
