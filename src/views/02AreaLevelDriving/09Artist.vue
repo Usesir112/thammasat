@@ -1,6 +1,8 @@
 <template>
     <Layout>
-        สวนศิลป์บินสิ
+      <div class="absolute -top-[35%]">
+        <img src="../../../public/image/02AreaLevelDriving/09Artist/Artist.jpg"  alt="draft">
+      </div>
     </Layout>
 </template>
 <script>

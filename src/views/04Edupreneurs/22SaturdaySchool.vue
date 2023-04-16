@@ -1,6 +1,8 @@
 <template>
     <Layout>
-        Saturday School
+      <div class="absolute -top-[35%]">
+        <img src="../../../public/image/04Edupreneurs/22SaturdaySchool/SaturdaySchool.jpg"  alt="draft">
+      </div>
     </Layout>
 </template>
 <script>
@@ -10,3 +12,5 @@ export default {
   components: { Layout },
 };
 </script>
+
+

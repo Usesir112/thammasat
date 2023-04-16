@@ -1,6 +1,8 @@
 <template>
     <Layout>
-        กลุ่มรักษ์เขาชะเมา
+      <div class="absolute -top-[35%]">
+        <img src="../../../public/image/02AreaLevelDriving/06KhaoChamao/KhaoChamao.jpg"  alt="draft">
+      </div>
     </Layout>
 </template>
 <script>
@@ -10,3 +12,4 @@ export default {
   components: { Layout },
 };
 </script>
+
