@@ -1,18 +1,18 @@
 <template>
   <section>
-    <div class="grid md:grid-cols-2 mt-10 mx-10 md:mx-40">
-      <div>
+    <div class="grid content-center lg:grid-cols-2 mt-10 mx-10 lg:mx-40">
+      <div class="grid content-center lg:mx-24">
         <!-- Head -->
         <div>
           <p class="text-5xl text-primary font-bold mt-3">
             <span class="text-primary-900">โครงการ</span>
-            <span class="md:text-4xl">{{ topic }}</span>
+            <span class="lg:text-4xl">{{ topic }}</span>
           </p>
         </div>
         <!-- Head -->
 
         <!-- Description -->
-        <div class="text-primary-900 mt-5 md:text-lg">
+        <div class="text-primary-900 mt-5 lg:text-lg">
           <p>{{ description }}</p>
         </div>
         <!-- Description -->
@@ -31,7 +31,7 @@
       </div>
 
       <!-- Thai map -->
-      <div class="mt-10">
+      <div class="mt-10 w-[80%]">
         <Thailand
           :population="{
             North: this.stat[0].amount,
