@@ -13,6 +13,7 @@
           <div
             data-aos="fade-down"
             data-aos-duration="1000"
+            data-aos-delay="500"
             data-aos-anchor-placement="bottom-bottom"
             class="flex items-center justify-center"
           >
@@ -41,14 +42,7 @@
     </div>
   </section>
 </template>
-<script setup>
-import { onMounted } from "vue";
-import AOS from "aos";
 
-onMounted(() => {
-  AOS.init();
-});
-</script>
 <script>
 export default {
   data() {

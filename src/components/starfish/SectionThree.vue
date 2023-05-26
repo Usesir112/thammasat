@@ -15,6 +15,7 @@
           <div
             data-aos="fade-down"
             data-aos-duration="1000"
+            data-aos-delay="500"
             v-for="(item, index) in items"
             :key="index"
             class="grid grid-cols-7 mt-5 md:mx-3 bg-primary-100 rounded-full p-3"
@@ -43,15 +44,7 @@
     </div>
   </section>
 </template>
-<script setup>
-import { onMounted } from "vue";
-import AOS from "aos";
 
-onMounted(() => {
-    AOS.init();
-})
-
-</script>
 <script>
 export default {
   data() {

@@ -11,7 +11,12 @@
         <!-- Items -->
         <div class="grid justify-between md:grid-cols-3 grid-flow-col-1">
           <!-- Card 01 -->
-          <div class="bg-primary-900 text-primary-100 p-3 m-5 rounded-3xl">
+          <div
+            class="bg-primary-900 text-primary-100 p-3 m-5 rounded-3xl"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="center-center"
+          >
             <div class="flex justify-center m-3">
               <img
                 src="/image/01LongTermProject/01Starfish/des01.png"
@@ -39,7 +44,12 @@
           <!-- Card 01 -->
 
           <!-- Card 02 -->
-          <div class="bg-primary-900 text-primary-100 p-3 m-5 rounded-3xl">
+          <div
+            class="bg-primary-900 text-primary-100 p-3 m-5 rounded-3xl"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="center-center"
+          >
             <div class="flex justify-center m-3">
               <img
                 src="/image/01LongTermProject/01Starfish/des02.png"
@@ -70,6 +80,7 @@
     </div>
   </section>
 </template>
+
 <script>
 export default {
   data() {
