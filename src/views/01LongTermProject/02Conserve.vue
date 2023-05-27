@@ -9,6 +9,8 @@ import SectionThree from "@/components/conserve/SectionThree.vue";
 import SectionFour from "@/components/conserve/SectionFour.vue";
 import SectionFive from "@/components/conserve/SectionFive.vue"
 import SectionSix from "@/components/conserve/SectionSix.vue"
+import SectionSeven from "@/components/conserve/SectionSeven.vue"
+import SectionEight from "@/components/conserve/SectionEight.vue"
 
 export default defineComponent({
   components: {
@@ -18,7 +20,9 @@ export default defineComponent({
     SectionThree,
     SectionFour,
     SectionFive,
-    SectionSix
+    SectionSix,
+    SectionSeven,
+    SectionEight
   },
 });
 </script>
@@ -30,5 +34,7 @@ export default defineComponent({
         <SectionFour />
         <SectionFive />
         <SectionSix />
+        <SectionSeven />
+        <SectionEight />
     </Layout>
 </template>

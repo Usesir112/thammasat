@@ -16,6 +16,9 @@
             v-for="(item, index) in items"
             :key="index"
             class="place-items-center mt-12 grid-cols-1 md:mx-3"
+            data-aos="fade-down"
+            data-aos-delay="500"
+            data-aos-anchor-placement="center-bottom"
           >
             <img
               :src="`/image/conserve/section-two/${item.src}`"

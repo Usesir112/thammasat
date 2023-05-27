@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="mt-12 py-4">
+    <div class="mt-12 py-4 bg-primary-100">
       <div class="mx-10 md:mx-40">
         <!-- Topic -->
         <div class="text-primary-900">
@@ -10,21 +10,29 @@
 
         <!-- Items -->
         <div
-          class="grid justify-between text-primary-900 font-bold text-center md:grid-cols-4"
+          class="grid justify-between text-primary-900 font-bold md:grid-cols-2"
         >
           <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="500"
             v-for="(item, index) in items"
             :key="index"
-            class="grid grid-cols-2 place-items-center mt-12 md:grid-cols-1 md:mx-3"
+            class="grid grid-cols-7 mt-5 md:mx-3 bg-white rounded-full p-3"
           >
-            <img
-              :src="`/image/conserve/section-six/${item.src}`"
-              alt="item-one"
-              class="w-3/4"
-            />
-            <div class="md:mt-5">
-              <p class="md:h-20">
+            <div class="flex items-center col-span-2">
+              <img :src="`/image/conserve/${item.src}`" alt="item-one" />
+            </div>
+
+            <div class="flex items-center col-span-4 ml-3">
+              <p class="md:text-2xl">
                 {{ item.descr }}
+              </p>
+            </div>
+
+            <div class="flex items-center ml-4">
+              <p class="text-primary-100 text-4xl md:text-[10rem]">
+                {{ index + 1 }}
               </p>
             </div>
           </div>
@@ -35,19 +43,37 @@
     </div>
   </section>
 </template>
+
 <script>
 export default {
   data() {
     return {
-      topic: "ปัญหาในการทำงาน",
+      topic: "แผนการดำเนินงาน",
       items: [
         {
-          src: "structure.png",
-          descr: "โครงสร้างของรัฐ",
+          src: "plan01.png",
+          descr: "สนับสนุนทุนการศึกษานักศึกษารุ่นที่ 1 - 4",
         },
         {
-          src: "teamwork.png",
-          descr: "ความร่วมมือของหน่วยงานภาครัฐหลายฝ่าย",
+          src: "plan02.png",
+          descr: "พัฒนานักศึกษาผู้รับทุนรุ่นที่ 1 - 4",
+        },
+        {
+          src: "plan03.png",
+          descr: "งบประมาณเตรียมความพร้อมสำหรับรุ่นที่ 5",
+        },
+        {
+          src: "plan04.png",
+          descr: "กิจกรรมพัฒนาครู ผู้บริหาร และบุคลากร",
+        },
+        {
+          src: "plan05.png",
+          descr: "พัฒนาสถาบันต้นแบบ",
+        },
+        {
+          src: "plan06.png",
+          descr:
+            "ศึกษาวิจัย ติดตาม ประเมินจัดการ ถอดบนเรียนสำหรับ โรงเรียนในพื้นที่ห่าง ไกลรุ่นต่อไป",
         },
       ],
     };
