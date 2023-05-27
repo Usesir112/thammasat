@@ -1,6 +1,6 @@
 <template>
   <!-- Target group -->
-  <section class="px-10 md:px-40 pt-8 space-y-12">
+  <section class="px-10 md:px-[200px] pt-8 space-y-12">
     <h1 class="text-4xl font-bold text-primary-900">กลุ่มเป้าหมาย</h1>
 
     <div

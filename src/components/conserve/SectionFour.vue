@@ -1,5 +1,5 @@
 <template>
-  <section class="p-10 md:px-40 pt-8 space-y-12 bg-primary-100">
+  <section class="p-10 md:px-[200px] pt-8 space-y-12 bg-primary-100">
     <h1 class="text-4xl font-bold text-primary-900">
       ระยะเวลาการดำเนินโครงการ
     </h1>
@@ -42,7 +42,7 @@
 
         <!-- Body -->
         <div class="ml-10 border-l-2 border-primary-900">
-          <div class="ml-10  md:flex-row items-center">
+          <div class="ml-10  md:flex items-center">
             <img
               class="w-1/2 md:w-1/6 md:m-5"
               :src="`/image/conserve/${item.image}`"

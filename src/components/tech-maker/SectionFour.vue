@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="mt-12 py-4">
-      <div class="mx-10 md:mx-40">
+      <div class="mx-10 md:mx-[200px]">
         <!-- Topic -->
         <div class="text-primary-900">
           <p class="text-4xl font-bold py-5">{{ topic }}</p>
@@ -10,16 +10,23 @@
 
         <!-- Items -->
         <div
-          class="grid justify-between text-primary-900 font-bold text-center md:grid-cols-4"
+          class="grid justify-between text-primary-900 font-bold text-center md:grid-cols-5"
         >
           <div
             v-for="(item, index) in items"
             :key="index"
             class="grid grid-cols-2 place-items-center mt-12 md:grid-cols-1 md:mx-3"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-center"
           >
-            <img :src="`/image/tech-maker/section-four/${item.src}`" alt="item-one" class="w-3/4" />
+            <img
+              :src="`/image/01LongTermProject/03TechMaker/${item.src}`"
+              alt="item-one"
+              class="w-3/4"
+            />
             <div class="md:mt-5">
-              <p class="md:h-20">
+              <p class="md:h-20 text-2xl">
                 {{ item.descr }}
               </p>
             </div>
@@ -37,53 +44,48 @@ export default {
     return {
       topic: "ปัจจัยแห่งความสำเร็จ",
       items: [
-        // First column
         {
-          src: "network.png",
+          src: "suc01.png",
           descr: "เครือข่าย",
         },
         {
-          src: "money.png",
+          src: "suc02.png",
           descr: "ทุน",
         },
         {
-          src: "manage.png",
+          src: "suc03.png",
           descr: "การบริหารจัดการ",
         },
         {
-          src: "unity.png",
+          src: "suc04.png",
           descr: "ความร่วมมือของชุมชน / นิเวศเชิงพื้นที่",
         },
-
-        // Second column
         {
-          src: "perspective.png",
+          src: "suc05.png",
           descr: "ทัศนคติของคนในสังคม",
         },
         {
-          src: "adapt.png",
-          descr: "ความสามารถในการปรับตัวกับสถานการ์ณ",
+          src: "suc06.png",
+          descr: "ความสามารถในการปรับตัวกับสถานการณ์",
         },
         {
-          src: "change.png",
+          src: "suc07.png",
           descr: "การเท่าทันการเปลี่ยนแปลง",
         },
         {
-          src: "view.png",
-          descr: "การขยายมุมมอง",
+          src: "suc08.png",
+          descr: "การปรับเป้าหมายและทิศทาง",
         },
-
-        // Third column
         {
-          src: "pactical.png",
+          src: "suc09.png",
           descr: "การได้ลงมือทำ",
         },
         {
-          src: "understanding.png",
-          descr: "ความเข้าใจประเด็นพื้นที่",
+          src: "suc10.png",
+          descr: "ความเข้าใจประเด็นในพื้นที่",
         },
         {
-          src: "encouragement.png",
+          src: "suc11.png",
           descr: "การให้พลังใจในการทำงานระหว่างกัน",
         },
       ],

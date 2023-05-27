@@ -17,7 +17,7 @@
 
       <div class="grid mt-10 place-items-center md:flex md:justify-center">
         <!-- Image -->
-        <div data-aos="fade-right" data-aos-delay="500" class="md:min-w-[400px]">
+        <div data-aos="fade-right" data-aos-delay="500" class="md:max-w-[400px]">
           <img
             src="/image/01LongTermProject/01Starfish/school.png"
             alt="middle"

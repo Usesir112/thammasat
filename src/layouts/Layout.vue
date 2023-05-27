@@ -1,6 +1,8 @@
 <template>
     <navbar />
-    <slot />
+    <div class="overflow-x-hidden">      
+      <slot />
+    </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'

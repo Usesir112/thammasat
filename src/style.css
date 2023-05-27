@@ -9,7 +9,6 @@
 @layer base {
   html, body {
     font-family: "Prompt", sans-serif;
-    overflow-x: hidden;
   }
 }
 
