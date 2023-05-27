@@ -1,56 +1,13 @@
 <template>
-  <section>
-    <div class="mt-12 py-4 bg-primary-100">
-      <div class="mx-10 md:mx-40">
-        <!-- Topic -->
-        <div class="text-primary-900">
-          <p class="text-4xl font-bold py-5">{{ topic }}</p>
-        </div>
-        <!-- Topic -->
-
-        <!-- Items -->
-        <div
-          class="grid justify-between text-primary-900 font-bold text-center md:grid-cols-3"
-        >
-          <div
-            v-for="(item, index) in items"
-            :key="index"
-            class="grid grid-cols-2 place-items-center mt-12 md:grid-cols-1 md:mx-3"
-          >
-            <img :src="`/image/conserve/section-five/${item.src}`" alt="item-one" class="w-3/4" />
-            <div class="md:mt-5">
-              <p class="md:h-20 text-2xl">
-                {{ item.descr }}
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Items -->
-      </div>
+  <section class="px-10 md:px-40 pt-8 space-y-12">
+    <h1 class="text-4xl font-bold text-primary-900">กิจกรรมในองค์กร</h1>
+    <div
+      data-aos="fade-down"
+      data-aos-delay="500"
+      data-aos-anchor-placement="center-bottom"
+    >
+      <img src="/image/conserce/event-organization.png" alt="event" />
     </div>
   </section>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      topic: "ปัจจัยแห่งความสำเร็จ",
-      items: [
-        {
-          src: "conection.png",
-          descr: "เครือข่าย",
-        },
-        {
-          src: "funding.png",
-          descr: "ทุน",
-        },
-        {
-          src: "child.png",
-          descr: "การสร้างทายาท",
-        },
-      ],
-    };
-  },
-};
-</script>
+

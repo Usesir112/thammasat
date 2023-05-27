@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="bg-primary-100 mt-12 py-4">
-      <div data-aos="fade-down" class="grid place-items-center md:grid-cols-2 mx-10 md:mx-40">
+      <div data-aos="fade-down" data-aos-delay="500" class="grid place-items-center md:grid-cols-2 mx-10 md:mx-40">
         <!-- Text -->
         <div class="grid place-items-center font-semibold">
           <p class="md:text-2xl">
@@ -27,12 +27,3 @@
     </div>
   </section>
 </template>
-<script setup>
-import { onMounted } from "vue";
-import AOS from "aos";
-
-onMounted(() => {
-    AOS.init();
-})
-
-</script>

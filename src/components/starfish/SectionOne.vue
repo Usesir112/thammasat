@@ -17,13 +17,13 @@
 
       <div class="grid mt-10 place-items-center md:grid-cols-2">
         <!-- Image -->
-        <div data-aos="fade-right">
+        <div data-aos="fade-right" data-aos-delay="500">
           <img class="md:w-[80%]" src="/image/01LongTermProject/01Starfish/school.png" alt="middle" />
         </div>
         <!-- Image -->
 
         <!-- Text -->
-        <div data-aos="fade-left" class="grid mt-10 place-items-center md:mx-20 font-semibold">
+        <div data-aos="fade-left" data-aos-delay="500" class="grid mt-10 place-items-center md:mx-20 font-semibold">
           <p class="md:text-2xl">
             โรงเรียนบ้านปลาดาว เป็นโรงเรียนเอกชนประเภทศึกษาสงเคราะห์
             สังกัดกระทรวงศึกษาธิการ จัดการศึกษาในระดับอนุบาล และประถมศึกษา
@@ -41,15 +41,6 @@
     </div>
   </section>
 </template>
-<script setup>
-import { onMounted } from "vue";
-import AOS from "aos";
-
-onMounted(() => {
-    AOS.init();
-})
-
-</script>
 <script>
 export default {
   data() {

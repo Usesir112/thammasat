@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="mt-12 py-4">
+    <div class="mt-12 py-4 bg-primary-100">
       <div class="mx-10 md:mx-40">
         <!-- Topic -->
         <div class="text-primary-900">
@@ -18,10 +18,10 @@
             class="grid grid-cols-2 place-items-center mt-12 md:grid-cols-1 md:mx-3"
             data-aos="fade-down"
             data-aos-duration="1000"
-            data-aos-anchor-placement="top-center"
+            data-aos-anchor-placement="center-bottom"
           >
             <img
-              :src="`/image/01LongTermProject/01Starfish/${item.src}`"
+              :src="`/image/conserve/${item.src}`"
               alt="item-one"
               class="w-3/4"
             />
@@ -42,27 +42,15 @@
 export default {
   data() {
     return {
-      topic: "ปัจจัยแห่งความสำเร็จ",
+      topic: "ปัญหาในการทำงาน",
       items: [
         {
-          src: "suc01.png",
-          descr: "ทุน",
+          src: "prob01.png",
+          descr: "โครงสร้างของรัฐ",
         },
         {
-          src: "suc02.png",
-          descr: "การบริหารจัดการ",
-        },
-        {
-          src: "suc03.png",
-          descr: "การปรับเป้าหมายและทิศทาง",
-        },
-        {
-          src: "suc04.png",
-          descr: "การเข้าถึงข้อมูล",
-        },
-        {
-          src: "suc05.png",
-          descr: "ความร่วมมือของคนในทีม",
+          src: "prob02.png",
+          descr: "ความร่วมมือของหน่วยงานภาครัฐหลายฝ่าย",
         },
       ],
     };

@@ -17,7 +17,7 @@
       <!-- Head -->
 
       <!-- Picture -->
-      <div class="grid mt-10 place-items-center md:grid-cols-2">
+      <div class="grid mt-10 place-items-center md:grid-cols-2" data-aos="fade-up" data-aos-delay="500">
 
         <!-- Image -->
         <div>
@@ -33,7 +33,7 @@
 
       </div>
       <!-- Picture -->
-      <div class="grid mt-10 place-items-center md:mx-20 font-semibold">
+      <div class="grid mt-10 place-items-center md:mx-20 font-semibold" data-aos="fade-down" data-aos-delay="500">
         <p class="md:text-2xl">
           ดำเนินงานภายใต้แผนพัฒนาระบบการผลิตและพัฒนาครูสำหรับพื้นที่ห่างไกล
           กองทุนเพื่อ ความเสมอภาพทางการศึกษา มีเป้าหมายที่จะ
