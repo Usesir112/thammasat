@@ -1,29 +1,32 @@
 <template>
   <section>
-    <div class="mt-12 py-4">
-      <div class="mx-10 md:mx-40">
+    <div class="mt-12 py-4 bg-primary-100">
+      <div class="mx-10 md:mx-[200px]">
         <!-- Topic -->
         <div class="text-primary-900">
-          <p class="text-4xl font-bold py-5">{{  topic }}</p>
+          <p class="text-4xl font-bold py-5">{{ topic }}</p>
         </div>
         <!-- Topic -->
 
         <!-- Items -->
         <div
-          class="grid justify-between text-primary-900 font-bold text-center md:grid-cols-4"
+          class="grid justify-between text-primary-900 font-bold text-center md:grid-cols-5"
         >
           <div
             v-for="(item, index) in items"
             :key="index"
             class="grid grid-cols-2 place-items-center mt-12 md:grid-cols-1 md:mx-3"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-bottom"
           >
             <img
-              :src="`/image/tech-maker/section-five/${item.src}`"
+              :src="`/image/01LongTermProject/03TechMaker/${item.src}`"
               alt="item-one"
               class="w-3/4"
             />
             <div class="md:mt-5">
-              <p class="md:h-20">
+              <p class="md:h-20 text-2xl">
                 {{ item.descr }}
               </p>
             </div>
@@ -42,14 +45,13 @@ export default {
       topic: "ปัญหาในการทำงาน",
       items: [
         {
-          src: "confilx.png",
+          src: "prob01.png",
           descr: "ความขัดแย้งทางความคิดในเครือข่าย",
         },
         {
-          src: "structure.png",
-          descr: "โครงสร้างของรัฐ",
+          src: "prob02.png",
+          descr: "การละเลยจากภาครัฐ",
         },
-        
       ],
     };
   },

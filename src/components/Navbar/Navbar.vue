@@ -88,7 +88,6 @@
     </div>
   </nav>
 </template>
-
 <script>
 import Fillter from "./Fillter.vue";
 import { dataWithTag } from "./data";

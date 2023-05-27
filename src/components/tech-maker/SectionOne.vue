@@ -1,67 +1,63 @@
 <template>
   <section>
-    <div class="grid mt-10 mx-10 md:mx-40">
+    <div class="grid mt-10 mx-10 md:mx-[200px]">
       <!-- Tag -->
-      <div class="text-center md:w-1/6">
-        <p class="bg-primary text-white py-1 text-lg">โครงการ{{ topic }}</p>
+      <div class="text-center md:w-fit">
+        <p class="bg-primary text-white py-1 px-10 text-lg">{{ cetagory }}</p>
       </div>
       <!-- Tag -->
 
       <!-- Head -->
       <div>
         <p class="text-5xl text-primary font-bold mt-3">
-          <span class="text-primary-900">โครงการ</span>
-          <span class="md:text-4xl">{{ topic }}</span>
+          <span class="text-primary-900">{{ topic }}</span>
         </p>
+        <!-- Head -->
       </div>
-      <!-- Head -->
 
-      <!-- Description -->
-      <div class="text-primary-900 mt-5 md:text-lg">
-        <p>{{ description }}</p>
-      </div>
-      <!-- Description -->
+      <div
+        class="grid mt-10 place-items-center md:flex md:flex-col md:justify-center"
+      >
+        <!-- Text -->
+        <div
+          data-aos="fade-left"
+          data-aos-delay="500"
+          class="grid place-items-center md:ml-20 font-semibold"
+        >
+          <p class="md:text-2xl text-primary-900">
+            คือ โครงการที่สร้างจุดยืนในการพัฒนาศักยภาพของครู
+            ซึ่งถือได้ว่าเป็นผู้นำ แห่งการเปลี่ยนแปลง
+            ทั้งยังร่วมสร้างความตระหนักและการสร้างแรงบันดาลใจ
+            ให้กับครูหรือผู้ที่ทำ งานด้านการศึกษาทั่วประเทศ
+          </p>
+        </div>
+        <!-- Text -->
 
-      <!-- Picture -->
-      <div class="grid md:grid-cols-3 mt-5 place-items-center">
-        <!-- Left -->
-        <div class="grid grid-cols-2 place-items-center mt-5 md:grid-cols-1">
+        <!-- Image -->
+        <div
+          data-aos="fade-right"
+          data-aos-delay="500"
+          class="mt-10 md:w-[70%]"
+        >
           <img
-            class="w-3/4"
-            src="/image/tech-maker/section-one/left.png"
-            alt="left"
+            src="/image/01LongTermProject/03TechMaker/main.png"
+            alt="middle"
+            class="hidden md:block "
           />
-          <div class="ml-3 md:ml-0 md:mt-5">
-            <p>กลุ่มเป้าหมาย</p>
-            <p>กลุ่มคนทำงาน (25 - 60 ปี)</p>
-            <p>1,000 คน</p>
-          </div>
-        </div>
-        <!-- Left -->
-
-        <!-- Middle -->
-        <div class="w-1/2 order-first md:order-none md:w-full">
-          <img src="/image/tech-maker/section-one/middle.png" alt="middle" />
-        </div>
-        <!-- Middle -->
-
-        <!-- Right -->
-        <div class="grid grid-cols-2 place-items-center mt-5 md:grid-cols-1">
           <img
-            class="w-3/4"
-            src="/image/tech-maker/section-one/right.png"
-            alt="right"
+            src="/image/01LongTermProject/03TechMaker/sep01.png"
+            alt="middle"
+            class="md:hidden block mt-5 "
           />
-          <div class="ml-3 md:ml-0 md:mt-5">
-            <p>พัฒนาศัยกภาพของ</p>
-            <p>ครูแกนนำ</p>
-            <p>จำนวน 4 รุ่น</p>
-          </div>
-        </div>
-        <!-- Right -->
-      </div>
+          <img
+            src="/image/01LongTermProject/03TechMaker/sep02.png"
+            alt="middle"
+            class="md:hidden block mt-5"
+          />
 
-      <!-- Picture -->
+        </div>
+        <!-- Image -->
+      </div>
     </div>
   </section>
 </template>
@@ -69,9 +65,8 @@
 export default {
   data() {
     return {
-      topic: "ก่อการครู",
-      description:
-        "คือ โครงการที่สร้างจุดยืนในการพัฒนาศักยภาพของครูซึ่งถือได้ว่าเป็นผู้นำแห่งการเปลี่ยนแปลงทั้งยังร่วมสร้างความตระหนักและการสร้างแรงบันดาลใจให้กับครูหรือผู้ที่ทำงานด้านศึกษาทั่วประเทศ",
+      cetagory: "โครงการก่อการครู",
+      topic: "โครงการก่อการครู",
     };
   },
 };

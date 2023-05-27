@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="mt-12 py-4 bg-primary-100">
-      <div class="mx-10 md:mx-40">
+      <div class="mx-10 md:mx-[200px]">
         <!-- Topic -->
         <div class="text-primary-900">
           <p class="text-4xl font-bold py-5">{{ topic }}</p>
@@ -24,7 +24,7 @@
               <img :src="`/image/conserve/${item.src}`" alt="item-one" />
             </div>
 
-            <div class="flex items-center col-span-4 m-10 break-normal">
+            <div class="flex items-center col-span-4 mx-3 md:m-10 break-normal">
               <p class="md:text-2xl">
                 {{ item.descr }}
               </p>

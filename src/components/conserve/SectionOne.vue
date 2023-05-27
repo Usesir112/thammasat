@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="grid mt-10 mx-10 md:mx-40">
+    <div class="grid mt-10 mx-10 md:mx-[200px]">
       <!-- Tag -->
       <div class="text-center md:w-1/4">
         <p class="bg-primary text-white py-1 text-lg">{{ cetagory }}</p>
