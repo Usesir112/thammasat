@@ -15,7 +15,7 @@
             class="bg-primary-900 text-primary-100 p-3 m-5 rounded-3xl"
             data-aos="fade-down"
             data-aos-duration="1000"
-            data-aos-anchor-placement="top-center"
+            data-aos-anchor-placement="center-bottom"
           >
             <div class="flex justify-center m-3">
               <img
@@ -48,7 +48,7 @@
             class="bg-primary-900 text-primary-100 p-3 m-5 rounded-3xl"
             data-aos="fade-down"
             data-aos-duration="1000"
-            data-aos-anchor-placement="top-center"
+            data-aos-anchor-placement="center-bottom"
           >
             <div class="flex justify-center m-3">
               <img
