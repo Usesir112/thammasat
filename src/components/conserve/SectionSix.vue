@@ -24,7 +24,7 @@
               <img :src="`/image/conserve/${item.src}`" alt="item-one" />
             </div>
 
-            <div class="flex items-center col-span-4 ml-3">
+            <div class="flex items-center col-span-4 m-10 break-normal">
               <p class="md:text-2xl">
                 {{ item.descr }}
               </p>

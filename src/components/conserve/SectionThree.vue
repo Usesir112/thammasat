@@ -7,7 +7,7 @@
       class="grid place-items-center md:grid-cols-4 gap-16"
       data-aos="fade-down"
       data-aos-delay="500"
-      data-aos-anchor-placement="center-bottom"
+      data-aos-anchor-placement="top-center"
     >
       <img src="/image/conserce/people.png" alt="people" />
 
@@ -34,7 +34,7 @@
     <div
       class="text-4xl font-bold text-primary-900"
       data-aos="fade-down"
-      data-aos-delay="500"
+      data-aos-delay="1000"
       data-aos-anchor-placement="top-center"
     >
       <h1>จำนวนผู้ที่มีส่วนร่วมในโครงการ</h1>
